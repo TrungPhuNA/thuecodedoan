@@ -158,7 +158,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Mô tả yêu cầu và tính năng</h6>
                             <div class="input-group mb-3">
-                                <textarea name="p_content" id="content" cols="30" rows="10"></textarea>
+                                <textarea name="p_content" id="content" cols="30" rows="10">{!! $project->p_content ?? '' !!}</textarea>
                             </div>
                         </div>
                     </div>
