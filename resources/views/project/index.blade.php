@@ -8,6 +8,7 @@
     </style>
     <div class="container-fluid">
         <h4>Danh sách đồ án CNTT <a href="{{ route('get.project.create') }}" class="btn btn-sm btn-primary pull-right">Tạo mới <i class="fa fa-plus-circle"></i></a></h4>
+        <div class="table-responsive">
         <table class="table mt-3">
             <caption>List of users</caption>
             <thead>
@@ -60,5 +61,6 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 @endsection
