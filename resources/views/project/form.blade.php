@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Thông tin khách hàng</h6>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-4">
                                     <label for="basic-url">Họ tên <span class="text-danger">(*)</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -25,7 +25,7 @@
                                         <input type="text" name="p_fullname" class="form-control" value="{{ $project->p_fullname ?? '' }}" placeholder="Họ tên ">
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-8">
                                     <label for="basic-url">Link facebook <span class="text-danger">(*)</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
@@ -149,6 +149,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Thông tin người bán</h6>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="basic-url">Họ tên <span class="text-danger">(*)</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" name="p_name_pay" class="form-control" value="{{ $project->p_name_pay ?? '' }}" placeholder="Họ tên ">
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <label for="basic-url">Link facebook <span class="text-danger">(*)</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-facebook"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" name="p_face_pay" value="{{ $project->p_face_pay ?? '' }}" placeholder="Link facebook nếu có ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -157,6 +184,14 @@
                     <div class="card mt-2">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-muted">Mô tả yêu cầu và tính năng</h6>
+                            <label for="basic-url">Tóm tắt mô tả yc (Không quá 300 từ) <span class="text-danger">(*)</span></label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Mô tả</span>
+                                </div>
+                                <textarea class="form-control" aria-label="With textarea" name="p_required">{{ $project->p_required ?? "" }}</textarea>
+                            </div>
+
                             <div class="input-group mb-3">
                                 <textarea name="p_content" id="content" cols="30" rows="10">{!! $project->p_content ?? '' !!}</textarea>
                             </div>

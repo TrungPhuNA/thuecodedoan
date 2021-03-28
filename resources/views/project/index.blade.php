@@ -31,12 +31,15 @@
                         <td>
                             <div class="info">
                                 <p><span>Họ tên: </span> <span>{{ $item->p_fullname }}</span></p>
-                                <p><span>Facebook: </span> <a href="" title="" target="_blank">Click my</a></p>
+                                <p><span>Facebook: </span> <a href="{{ $item->p_facebook }}" title="" target="_blank">Click my</a></p>
                             </div>
                         </td>
                         <td>
-                            <a href="">{{ $item->p_name }}</a>
+                            <a href="" data-toggle="tooltip" data-placement="top" title="{{ $item->p_required }}">{{ $item->p_name }}</a>
                             <p><a href="">Báo cáo <i class="fa fa-external-link"></i></a></p>
+                            @if(check_time_class($item->p_time_start, $item->p_time_stop))
+                                <p class="text-danger"><b><i>Trong khoảng thời gian làm bài</i></b></p>
+                            @endif
                         </td>
                         <td><span class="badge badge-primary">{{ $item->p_language_code }}</span></td>
                         <td>

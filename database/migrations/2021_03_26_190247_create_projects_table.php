@@ -19,9 +19,12 @@ class CreateProjectsTable extends Migration
             $table->string('p_slug')->nullable();
             $table->string('p_fullname')->nullable();
             $table->string('p_facebook')->nullable();
+            $table->string('p_required',300)->nullable();
             $table->string('p_university')->nullable();
             $table->string('p_language_code')->nullable();
             $table->string('p_csdl')->nullable();
+            $table->string('p_face_pay')->nullable();
+            $table->string('p_name_pay')->nullable();
             $table->integer('p_price')->default(0);
             $table->integer('p_deposit')->default(0);
             $table->date('p_time_start')->nullable();

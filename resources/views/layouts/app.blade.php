@@ -18,15 +18,17 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="">Ql đồ án</a>
+    <a class="navbar-brand" href="/">Ql đồ án</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href=""> Danh sách đồ án</a>
-            </li>
+            @foreach(config('nav.admin') as $item)
+                <li class="nav-item {{ \Request::route()->getName() == $item['route'] ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ route($item['route']) }}">{{ $item['name'] }}</a>
+                </li>
+            @endforeach
         </ul>
         <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
             <li class="nav-item dropdown">
@@ -56,5 +58,10 @@
 <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
 <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 @yield('script')
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
