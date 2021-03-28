@@ -38,7 +38,9 @@
                             <a href="" data-toggle="tooltip" data-placement="top" title="{{ $item->p_required }}">{{ $item->p_name }}</a>
                             <p><a href="">Báo cáo <i class="fa fa-external-link"></i></a></p>
                             @if(check_time_class($item->p_time_start, $item->p_time_stop))
-                                <p class="text-danger"><b><i>Trong khoảng thời gian làm bài</i></b></p>
+                                <p class="text-info"><b><i>Trong khoảng thời gian làm bài</i></b></p>
+                            @else
+                                <p class="text-danger"><b><i>Ngoài khoản thời gian</i></b></p>
                             @endif
                         </td>
                         <td><span class="badge badge-primary">{{ $item->p_language_code }}</span></td>
