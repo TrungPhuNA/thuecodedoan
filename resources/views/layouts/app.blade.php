@@ -58,10 +58,12 @@
 <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
 <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 @yield('script')
+<script src="{{ asset('js_jsvn/SFtracking.js') }}"></script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
 </script>
 </body>
 </html>
