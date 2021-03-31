@@ -59,6 +59,13 @@
 <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 @yield('script')
 <script src="{{ asset('js_jsvn/SFtracking.js') }}"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        SF.init({"campaign_id":"472","is_reoccur":1,"is_lastclick": 1} );
+        SF.track();
+    })
+</script>
+
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()

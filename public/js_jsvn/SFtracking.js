@@ -23,12 +23,12 @@ var SF = {
         this.is_lastclick = a.is_lastclick == 0 ? 0 : 1;
         this.campaign_id = a.campaign_id ? a.campaign_id : 0;
         this.cookie_domain = a.cookie_domain || null
+        console.log(this.campaign_id)
     },
     initHaravan: function () {
         var query_string = this.get_script_qs();
         var pa = query_string.split("?").pop().split("&");
         var kv = [];
-        console.log(pa)
         for (var j = 0; j < pa.length; j++) {
             kv = pa[j].split("=");
             switch (kv[0]) {
@@ -62,7 +62,7 @@ var SF = {
             }
         }
     },
- 	get_script_qs: function() {
+    get_script_qs: function() {
         var target = document.currentScript || (function() {
             var scripts = document.getElementsByTagName('script');
             var last_script = scripts[scripts.length - 1];
@@ -255,10 +255,6 @@ var SF = {
 };
 
 console.log('init SFtracking')
-SF.initHaravan({
-    'campaign_id' : 1994
-});
-SF.track({
-    'campaign_id' : 1994
-});
+SF.initHaravan();
+SF.track();
 SF.track_haravan_thank_you_page();
