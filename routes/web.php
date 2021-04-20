@@ -21,6 +21,8 @@ Route::get('login','LoginController@login')->name('get.login');
 Route::get('logout','LoginController@logout')->name('get.logout');
 Route::post('login','LoginController@postLogin');
 
+Route::get('show-log','ShowLogController@index')->name('get.show_log');
+Route::get('delete/{id}','ShowLogController@delete')->name('get.show_log.delete');
 Route::prefix('doan')->group(function (){
    Route::get('','ProjectController@index')->name('get.project');
    Route::get('danh-sach','ProjectController@index')->name('get.project')

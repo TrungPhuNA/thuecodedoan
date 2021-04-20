@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e7717e-2d2f-48b6-9545-f8e92b7407ce" name="Default Changelist" comment="add code">
+      <change afterPath="$PROJECT_DIR$/resources/views/log/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/ATtracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/SFtracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/embed/viral.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/finger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/trackingtag/track.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/trackingtag/tracking.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v2/SFtracking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v2/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v2/scalef.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v3/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v4/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v5/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/v6/d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js_jsvn/viralPRC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +170,9 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -173,7 +200,8 @@
       <workItem from="1616807967302" duration="3149000" />
       <workItem from="1616951076545" duration="1289000" />
       <workItem from="1617166326101" duration="925000" />
-      <workItem from="1617174285859" duration="467000" />
+      <workItem from="1617174285859" duration="2004000" />
+      <workItem from="1618891975546" duration="4436000" />
     </task>
     <task id="LOCAL-00001" summary="fix route">
       <created>1616791809424</created>
@@ -238,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617174374562</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add code">
+      <created>1617175102847</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617175102847</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

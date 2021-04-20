@@ -11,6 +11,10 @@ return [
         [
             'name'  => 'Danh sách đồ án',
             'route' => 'get.project'
-        ]
+        ],
+        [
+            'name'  => 'Show Log',
+            'route' => 'get.show_log'
+        ],
     ]
 ];

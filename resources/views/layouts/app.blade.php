@@ -62,13 +62,7 @@
 <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
 <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 @yield('script')
-<script src="https://service-be.accesstrade.vn/js/SFtracking.js?campaign_id=25"></script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        SF.init({"campaign_id": "274", "is_reoccur": 1, "is_lastclick": 1});
-        SF.track();
-    })
-</script>
+
 
 <script>
     $(function () {

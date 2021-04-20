@@ -10,8 +10,9 @@ class LoginController extends Controller
      * @return
      * form login admin
      */
-    public function login()
+    public function login(Request $request)
     {
+//        dd(        $request->header('User-Agent'));
         return view('auth.login');
     }
 
